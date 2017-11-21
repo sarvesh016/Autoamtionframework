@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="utility.Listener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="utility.TestListener">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="main"/>
+        </methods>
+      </class> <!-- utility.TestListener -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
